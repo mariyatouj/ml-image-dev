@@ -1,0 +1,126 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "Courier New", Courier, monospace;
+  button,
+  input,
+  select,
+  textarea {
+    font-family: inherit;
+  }
+}
+
+/* TODO: Edit the properties below to customize your website! */
+body {
+  cursor: url("cursor/cursor.png"), auto;
+  background-color: #d3e68f;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 20pt;
+  margin: 20px 50px 30px 50px;
+}
+
+p {
+  width: 80%;
+  text-align: left;
+  margin: 10px 50px;
+}
+
+.bubble {
+  background-color: #d2af9b;
+  border-radius: 10px;
+
+  width: 80%;
+  padding: 5px 0;
+  margin: 50px 0 10px 0;
+}
+
+/* Edit me to change the appearance of the button! */
+button {
+  font-size: 12pt;
+
+  background-color: #fff31d;
+  border: none;
+  /* for rounded corners */
+  border-radius: 5px;
+
+  width: 150px;
+  height: 50px;
+  margin: 20px 50px;
+}
+
+button:hover {
+  background-color: #d4d0d7;
+  cursor: pointer;
+}
+
+/* The camera */
+#webcam-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* The labels */
+#label-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 12pt;
+
+  margin: 25px;
+}
+img {
+  margin: 50px;
+  border: 5px solid #ffc152;
+}
+
+#webcam-container canvas.active {
+  border: 10px solid #a6e0e0; /* Border appears when active */
+  border-radius: 10px;
+}
+
+.menu ul {
+  list-style-type: none;
+  background-color: #718355;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+
+.menu a:hover {
+  background-color: #87986a;
+}
+
+.menu li {
+  float: left;
+}
+
+.container {
+  padding: 2rem;
+}
+
+.slide-wrapper {
+  position: relative;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  aspect-ratio: 16 / 9;
+  overflow-x: auto;
+}

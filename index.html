@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>my machine learning model</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <nav class="menu">
+    <ul>
+      <li><a href="index.html">home</a></li>
+      <li><a href="about.html">about</a></li>
+      <li><a href="carousel.html">image carousel</a></li>
+    </ul>
+  </nav>
+
+  <main class="bubble">
+    <h1>Bikini Bottom Character Detector 📷</h1>
+
+    <p>
+      Who's on screen? Start the camera and show the model an image
+      of a SpongeBob character! The characters the model can recognize are Spongebob, Patrick, and SandyCheeks. 
+      Show any picture of them and the model will show a '1' for the character it recognizes.
+    </p>
+
+    <div class="tip">
+      <button
+        type="button"
+        class="tip-toggle"
+        aria-expanded="false"
+        aria-controls="model-tip"
+      >
+        How does it work?
+      </button>
+
+      <p id="model-tip" class="text-popup" hidden>
+        the model compares the camera image with patterns it learned
+        from training examples, then predicts a character.
+      </p>
+    </div>
+
+    <button type="button" onclick="init()" id="start">Start!</button>
+
+    <div id="webcam-container"></div>
+    <div id="label-container" aria-live="polite"></div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+  <script src="script.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

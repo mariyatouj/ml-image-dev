@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>about the creator</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="carousel.html">image carousel</a></li>
+      </ul>
+    </nav>
+
+    <main class="bubble">
+      <h1>about the creator</h1>
+
+      <p>
+        i'm Mariyatou Jabbi, a sophomore majoring in CS + MATH at Tufts
+        University! i am interested in AI/ML and cybersecurity systems.
+      </p>
+
+      <img class="portrait" src="mari.jpg" alt="Mariyatou Jabbi" width="250" />
+
+      <div class="tip">
+        <button
+          type="button"
+          class="tip-toggle"
+          aria-expanded="false"
+          aria-controls="project-tip"
+        >
+          About this project
+        </button>
+
+        <p id="project-tip" class="text-popup" hidden>
+          this project explores image classification using SpongeBob characters.
+          visit the test gallery to see examples I tried!
+        </p>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
